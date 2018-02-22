@@ -1,6 +1,7 @@
 <template>
   <div class="404">
-    Nothing here.
+    <h2>{{msg}}</h2>
+    <a href="/">Here's a link</a> to the main application..
   </div>
 </template>
 
