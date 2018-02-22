@@ -28,12 +28,12 @@ export default new Router({
       path: '/saved',
       name: 'Saved',
       component: NoDocument
-    }/*,
+    },
     {
       path: '/*',
       name: '404',
       component: NoDocument
-    }*/
+    }
 
   ]
 
