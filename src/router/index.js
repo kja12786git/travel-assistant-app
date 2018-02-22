@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import NoDocument from '@/components/NoDocument'
+import Search from '@/components/Search'
+import Results from '@/components/Results'
 
 Vue.use(Router)
 
@@ -10,28 +11,29 @@ export default new Router({
     {
       path: '/',
       name: 'Search',
-      component: HelloWorld
-    },
+      component: Search
+    },    
     {
-      path: '/login',
+      path: 'login',
       name: 'Login',
-      component: HelloWorld
+      component: NoDocument
     },
     {
-      path: '/Results',
+      path: 'results',
       name: 'Results',
-      component: HelloWorld
+      component: Results
     },
     {
-      path: '/Saved',
+      path: 'saved',
       name: 'Saved',
-      component: HelloWorld
-    },
+      component: NoDocument
+    }/*,
     {
       path: '/*',
       name: '404',
       component: NoDocument
-    }
+    }*/
 
   ]
+
 })
