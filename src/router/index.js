@@ -7,24 +7,25 @@ import Results from '@/components/Results'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Search',
       component: Search
-    },    
+    },
     {
-      path: 'login',
+      path: '/login',
       name: 'Login',
       component: NoDocument
     },
     {
-      path: 'results',
+      path: '/results',
       name: 'Results',
       component: Results
     },
     {
-      path: 'saved',
+      path: '/saved',
       name: 'Saved',
       component: NoDocument
     }/*,
