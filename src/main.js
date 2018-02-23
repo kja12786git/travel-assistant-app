@@ -21,7 +21,8 @@ new Vue({
   ];
 
   res.json(loginAuthorized);
-})*/
+})
 
 app.listen(3003);
 console.log('@ port 3003');
+*/
