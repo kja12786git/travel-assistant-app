@@ -1,26 +1,18 @@
 <template>
   <header>
-    <h1>What To Do <br />In</h1>
+      <div class="loading" v-if="loading">Loading...</div>
+      <div class="error" v-if="error">{{ error }}</div>
+    <h1><span>W</span>hat <span>T</span>o <span>D</span>o <br /><span>I</span>n</h1>
     <form action="/results/">
       <input placeholder="Enter A City"></input>
       <select><optgroup><option v-for="item in items">{{ item.current_city.name }}</option></optgroup></select>
-      <button>>></button>
-
-      <span v-if="item in items">
-        <ul>
-          <li><strong>{{ item.current_city.name }}</strong></li>
-          <li>Number of interests listed: <strong>{{ item.current_city.total_points_of_interest }}</strong></li>
-          <li>Find it on: {{ item.current_city.google_maps_link }} Google Maps!</li>
-          <li>Description: {{ item.current_city.details.short_description }}</li>
-
-        </ul>
-      </span>
+      <button name="">>></button>
 
     </form>
 
   </header>
 </template>
-
+<!--<script type="text/javascript" src="../assets/dbstatic.js"></script> -->
 <script>
 export default {
   name: 'Search',
@@ -330,14 +322,23 @@ export default {
           ]
         }
 
-      ],
+      ]/*,
 
       allcities: { // Do for Post with reconfigured JSON format
 
-      }
+      }*/
 
     }
   }
 }
 
 </script>
+
+<style scoped>
+  h1 > span {
+    background-color: cyan;
+    padding: 0 5px;
+
+  }
+
+</style>
