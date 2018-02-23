@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueApiRequest from 'vue-api-request'
+
+ViewApiRequst.setAPI(api)
+Vue.use(VueApiRequest)
 
 Vue.config.productionTip = false
 

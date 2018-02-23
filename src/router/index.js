@@ -3,9 +3,12 @@ import Router from 'vue-router'
 import NoDocument from '@/components/NoDocument'
 import Search from '@/components/Search'
 import Results from '@/components/Results'
-import items from '@/assets/dbstatic.js'
+
+import VueApiRequest from 'vue-api-request'
+import api from '@/assets/dbstatic.js'
 
 Vue.use(Router)
+Vue.use(VueApiRequest)
 
 export default new Router({
   mode: 'history',
@@ -24,7 +27,7 @@ export default new Router({
     {
       path: '/results',
       name: 'Results',
-      component: Results
+      component: Results, Search
     },
     {
       path: '/saved',

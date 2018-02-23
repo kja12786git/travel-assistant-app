@@ -1,0 +1,82 @@
+warning: LF will be replaced by CRLF in src/router/index.js.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/src/components/Search.vue b/src/components/Search.vue[m
+[1mindex a2b2faa..c15feae 100644[m
+[1m--- a/src/components/Search.vue[m
+[1m+++ b/src/components/Search.vue[m
+[36m@@ -1,26 +1,18 @@[m
+ <template>[m
+   <header>[m
+[31m-    <h1>What To Do <br />In</h1>[m
+[32m+[m[32m      <div class="loading" v-if="loading">Loading...</div>[m
+[32m+[m[32m      <div class="error" v-if="error">{{ error }}</div>[m
+[32m+[m[32m    <h1><span>W</span>hat <span>T</span>o <span>D</span>o <br /><span>I</span>n</h1>[m
+     <form action="/results/">[m
+       <input placeholder="Enter A City"></input>[m
+       <select><optgroup><option v-for="item in items">{{ item.current_city.name }}</option></optgroup></select>[m
+[31m-      <button>>></button>[m
+[31m-[m
+[31m-      <span v-if="item in items">[m
+[31m-        <ul>[m
+[31m-          <li><strong>{{ item.current_city.name }}</strong></li>[m
+[31m-          <li>Number of interests listed: <strong>{{ item.current_city.total_points_of_interest }}</strong></li>[m
+[31m-          <li>Find it on: {{ item.current_city.google_maps_link }} Google Maps!</li>[m
+[31m-          <li>Description: {{ item.current_city.details.short_description }}</li>[m
+[31m-[m
+[31m-        </ul>[m
+[31m-      </span>[m
+[32m+[m[32m      <button name="">>></button>[m
+ [m
+     </form>[m
+ [m
+   </header>[m
+ </template>[m
+[31m-[m
+[32m+[m[32m<script type="text/javascript" src="../assets/dbstatic.js"></script>[m
+ <script>[m
+ export default {[m
+   name: 'Search',[m
+[36m@@ -330,14 +322,23 @@[m [mexport default {[m
+           ][m
+         }[m
+ [m
+[31m-      ],[m
+[32m+[m[32m      ]/*,[m
+ [m
+       allcities: { // Do for Post with reconfigured JSON format[m
+ [m
+[31m-      }[m
+[32m+[m[32m      }*/[m
+ [m
+     }[m
+   }[m
+ }[m
+ [m
+ </script>[m
+[32m+[m
+[32m+[m[32m<style scoped>[m
+[32m+[m[32m  h1 > span {[m
+[32m+[m[32m    background-color: cyan;[m
+[32m+[m[32m    padding: 0 5px;[m
+[32m+[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m</style>[m
+[1mdiff --git a/src/router/index.js b/src/router/index.js[m
+[1mindex ecc3080..dd0927d 100644[m
+[1m--- a/src/router/index.js[m
+[1m+++ b/src/router/index.js[m
+[36m@@ -3,11 +3,13 @@[m [mimport Router from 'vue-router'[m
+ import NoDocument from '@/components/NoDocument'[m
+ import Search from '@/components/Search'[m
+ import Results from '@/components/Results'[m
+[32m+[m[32mimport items from '@/assets/dbstatic.js'[m
+ [m
+ Vue.use(Router)[m
+ [m
+ export default new Router({[m
+   mode: 'history',[m
+[32m+[m[32m  items: items,[m
+   routes: [[m
+     {[m
+       path: '/',[m
