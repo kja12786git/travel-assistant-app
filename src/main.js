@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import VueApiRequest from 'vue-api-request'
 
-ViewApiRequst.setAPI(api)
+VueApiRequest.setAPI(api)
 Vue.use(VueApiRequest)
 
 Vue.config.productionTip = false
@@ -26,7 +26,7 @@ new Vue({
 
   res.json(loginAuthorized);
 })
+*/
 
 app.listen(3003);
 console.log('@ port 3003');
-*/
