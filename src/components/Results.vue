@@ -3,6 +3,7 @@
     <h1>Search Results</h1>
     <p>{{msg}}</p>
 
+
   </header>
 </template>
 
