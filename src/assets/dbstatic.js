@@ -1,9 +1,4 @@
-import Vue from 'vue'
-import VueResource from 'vue-resource'
-
-Vue.use(VueResource)
-
-export default {
+const api = {
     api: {
       "items": [{"current_city": {
           "name": "Chicago",

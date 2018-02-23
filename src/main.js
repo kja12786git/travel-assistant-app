@@ -3,10 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueApiRequest from 'vue-api-request'
-
-VueApiRequest.setAPI(api)
-Vue.use(VueApiRequest)
 
 Vue.config.productionTip = false
 
@@ -16,6 +12,7 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
+
 })
 
 // for Auth0 use
@@ -28,5 +25,5 @@ new Vue({
 })
 */
 
-app.listen(3003);
-console.log('@ port 3003');
+/*app.listen(3003);
+console.log('@ port 3003');*/
