@@ -3,11 +3,13 @@ import Router from 'vue-router'
 import NoDocument from '@/components/NoDocument'
 import Search from '@/components/Search'
 import Results from '@/components/Results'
+import items from '@/assets/dbstatic.js'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  items: items,
   routes: [
     {
       path: '/',
