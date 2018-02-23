@@ -1,13 +1,19 @@
 <template>
   <header>
     <h1>What To Do <br />In</h1>
-    <form action="/results">
+    <form action="/results/">
       <input placeholder="Enter A City"></input>
-      <select><optgroup><option>New York</option><option>Los Angeles</option></optgroup></select>
+      <select><optgroup><option v-for="item in items">{{ item.current_city.name }}</option></optgroup></select>
       <button>>></button>
 
-      <span v-for="item in items">
-        <p>{{ item.current_city.name }} </p>
+      <span v-if="item in items">
+        <ul>
+          <li><strong>{{ item.current_city.name }}</strong></li>
+          <li>Number of interests listed: <strong>{{ item.current_city.total_points_of_interest }}</strong></li>
+          <li>Find it on: {{ item.current_city.google_maps_link }} Google Maps!</li>
+          <li>Description: {{ item.current_city.details.short_description }}</li>
+
+        </ul>
       </span>
 
     </form>
