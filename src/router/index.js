@@ -17,6 +17,12 @@ export default new Router({
 
     },
     {
+      path: '/results',
+      name: 'Results',
+      component: Results
+
+    },
+    {
       path: '/login',
       name: 'Login',
       component: NoDocument
