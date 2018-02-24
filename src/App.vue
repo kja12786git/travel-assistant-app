@@ -1,7 +1,9 @@
 <template>
   <div id="app">
+    <Nav />
     <router-view /> <!--    <Search /> -->
-    <Results />
+<!--    <Results />
+    <SavedList /> -->
 
   </div>
 
@@ -9,11 +11,13 @@
 
 <script>
 import Results from '@/components/Results'
+import SavedList from '@/components/SavedList'
+import Nav from '@/components/Nav'
 
   export default {
     name: 'App',
     components: {
-      Results
+      Results, SavedList, Nav
 
     }
   }
@@ -21,13 +25,18 @@ import Results from '@/components/Results'
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+
+  }
+  body ul {
+    list-style: none;
+
+  }
 
 </style>
