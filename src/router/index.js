@@ -13,17 +13,19 @@ export default new Router({
       path: '/',
       name: 'Search',
       component: Search
+
     },
     {
       path: '/login',
       name: 'Login',
       component: NoDocument
+
     },
-    {
+    /*{
       path: '/results',
       name: 'Results',
-      component: Results, Search
-    },
+      component: Results
+    },*/
     {
       path: '/saved',
       name: 'Saved',

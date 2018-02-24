@@ -1,7 +1,5 @@
 <template>
   <div class="results">
-      <div class="loading" v-if="loading">Loading...</div>
-      <div class="error" v-if="error">{{ error }}</div>
     <h1>Search Results</h1>
       <p>{{msg}}</p>
       <p>{{ item.current_city.name }}</p>
@@ -14,9 +12,11 @@
         <li>Description: {{ item.current_city.details.short_description }}</li>
 
       </ul>
+
     </span>
 
   </div>
+
 </template>
 
 <script>
@@ -24,7 +24,7 @@
     name: 'Results',
     data () {
       return {
-        msg: 'Displays the return from the city searched.'
+        msg: 'To display data from the city searched.',
 
       }
     }

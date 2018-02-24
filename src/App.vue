@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view /> <!--    <Search /> -->
+    <Results />
 
   </div>
 
 </template>
 
 <script>
-export default {
-  name: 'App'
+import Results from '@/components/Results'
 
-}
+  export default {
+    name: 'App',
+    components: {
+      Results
+
+    }
+  }
+
 </script>
 
 <style>
@@ -22,4 +29,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
