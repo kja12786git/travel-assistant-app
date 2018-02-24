@@ -13,7 +13,7 @@ new Vue({
   components: { App },
   template: '<App/>',
   data: {
-    message: '',
+    message: 'The data...',
     cities: [
         {"current_city": {
             "name": "Chicago",
@@ -312,9 +312,10 @@ new Vue({
             }
           ]
         }
-      ]/*,
-      allcities: { // Do for Post with reconfigured JSON format
-      }*/
+      ]
+    /*,
+    allcities: { // Do for Post with reconfigured JSON format
+    }*/
 
   }
 

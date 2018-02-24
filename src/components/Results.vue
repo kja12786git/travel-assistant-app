@@ -2,7 +2,7 @@
   <div class="results">
     <h1>Search Results</h1>
       <p>{{msg}}</p>
-      <p>{{ item.current_city.name }}</p>
+      <!--<p>{{ item.current_city.name }}</p>-->
 
     <span v-for="item in items">
       <ul>

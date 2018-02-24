@@ -15,7 +15,6 @@
 
       </form>
 
-
   </header>
 
 
@@ -27,7 +26,7 @@
     data () {
       return {
         msg: 'Welcome to Travel Assistant App'
-        
+
       }
     }
   }
