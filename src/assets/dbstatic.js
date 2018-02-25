@@ -1,6 +1,8 @@
-const api = {
-    api: {
-      "items": [{"current_city": {
+var Cities = {
+    "data": {
+      "items": [
+        {
+        "current_city": {
           "name": "Chicago",
           "location": {
             "latitude": 41.85003,
@@ -136,11 +138,11 @@ const api = {
             }
           }
         ]
-      }
+        }
+        ,
 
-      ,
-
-      {"current_city": {
+        {
+        "current_city": {
           "name": "Los Angeles",
           "location": {
             "latitude": 34.05223,
@@ -210,99 +212,120 @@ const api = {
             }
           }
         ]
-      }
+        }
+        ,
 
-      ,
+        {
+          "current_city": {
+            "name": "Boston",
+            "location": {
+              "latitude": 42.35843,
+              "longitude": -71.05977
+            },
+            "geoname_id": 4930956,
+            "total_points_of_interest": 3674,
+            "important_note": "This city is not yet supported with Yapq Api. Please check our supported city list here: http://yapq.io/cities.html or in json format: http://yapq.io/cities.txt"
+          },
+          "points_of_interest": [
+            {
+              "title": "Boston Tea Party",
+              "categories": [
+                "1773 in Massachusetts",
+                "1773 in the Thirteen Colonies",
+                "1773 riots",
+                "Battles and conflicts without fatalities",
+                "Boston Harbor",
+                "British East India Company",
+                "History of Boston, Massachusetts",
+                "History of tea",
+                "History of the Thirteen Colonies",
+                "Massachusetts in the American Revolution",
+                "Political repression in the United States",
+                "Rebellions in the United States",
+                "Tax resistance in the United States"
+              ],
+              "grades": {
+                "city_grade": 0,
+                "yapq_grade": 5
+              },
+              "geoname_id": 4931015,
+              "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boston_Tea_Party_w.jpg/400px-Boston_Tea_Party_w.jpg",
+              "details": {
+                "description": "The Boston Tea Party  was a political protest by the Sons of Liberty in Boston, on December 16, 1773. The demonstrators, some disguised as American Indians, destroyed an entire shipment of tea sent by the East India Company, in defiance of the Tea Act of May 10, 1773. They boarded the ships and threw the chests of tea into Boston Harbor, ruining the tea. The British government responded harshly and the episode escalated into the American Revolution. The Tea Party became an iconic event of American history, and other political protests such as the Tea Party movement after 2010 explicitly refer to it.\nThe Tea Party was the culmination of a resistance movement throughout British America against the Tea Act, which had been passed by the British Parliament in 1773. Colonists objected to the Tea Act because they believed that it violated their rights as Englishmen to \"No taxation without representation,\" that is, be taxed only by their own elected representatives and not by a British parliament in which they were not represented. Protesters had successfully prevented the unloading of taxed tea in three other colonies, but in Boston, embattled Royal Governor Thomas Hutchinson refused to allow the tea to be returned to Britain.\nThe Boston Tea Party was a key event in the growth of the American Revolution. Parliament responded in 1774 with the Coercive Acts, or Intolerable Acts, which, among other provisions, ended local self-government in Massachusetts and closed Boston's commerce. Colonists up and down the Thirteen Colonies in turn responded to the Coercive Acts with additional acts of protest, and by convening the First Continental Congress, which petitioned the British monarch for repeal of the acts and coordinated colonial resistance to them. The crisis escalated, and the American Revolutionary War began near Boston in 1775.\n^ Young, Shoemaker, 183–85.\n^ John Adams: Revolutionary Writings 1755–1775 . This Destruction of the Tea is so bold, so daring, so firm, intrepid and inflexible, and it must have so important Consequences, and so lasting, that I cant but consider it as an Epocha in History.",
+                "wiki_page_link": "https://en.wikipedia.org/wiki/Boston Tea Party",
+                "short_description": "The Boston Tea Party  was a political protest by the Sons of Liberty in Boston, on December 16, 1773."
+              },
+              "location": {
+                "longitude": -71.0524,
+                "latitude": 42.3536,
+                "google_maps_link": "http://maps.google.com?q=42.3536,-71.0524"
+              }
+            },
+            {
+              "title": "Lizzie Borden",
+              "categories": [],
+              "grades": {
+                "city_grade": 1,
+                "yapq_grade": 4
+              },
+              "geoname_id": 0,
+              "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lizzie_borden.jpg/260px-Lizzie_borden.jpg",
+              "details": {
+                "description": "Lizzie Andrew Borden  was an American woman who was tried and acquitted for the 1892 axe murders of her father and her stepmother in Fall River, Massachusetts. The case was a cause célèbre throughout the United States. Following her release from the prison in which she had been held during the trial, Borden chose to remain a resident of Fall River, Massachusetts, for the rest of her life, despite facing significant ostracism. The Commonwealth of Massachusetts elected to charge no one else with the murder of Andrew and Abby Borden; speculation about the crimes still continues more than 100 years later.",
+                "wiki_page_link": "https://en.wikipedia.org/wiki/Lizzie Borden",
+                "short_description": "Lizzie Andrew Borden  was an American woman who was tried and acquitted for the 1892 axe murders of her father and her stepmother in Fall River, Massachusetts."
+              },
+              "location": {
+                "longitude": -71.1562,
+                "latitude": 41.699,
+                "google_maps_link": "http://maps.google.com?q=41.699,-71.1562"
+              }
+            },
+            {
+              "title": "Doug Flutie",
+              "categories": [],
+              "grades": {
+                "city_grade": 2,
+                "yapq_grade": 2
+              },
+              "geoname_id": 0,
+              "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Dougflutie.JPG/400px-Dougflutie.JPG",
+              "details": {
+                "description": "Douglas Richard Flutie  is a former player of American and Canadian football who was a quarterback in the National Football League , Canadian Football League , and United States Football League . He first rose to prominence during his college football career at Boston College, where he received the Heisman Trophy and the Davey O'Brien National Quarterback Award in 1984. His \"Hail Mary\" touchdown pass in a game against Miami on November 23, 1984  is considered among the greatest moments in college football and American sports history. Flutie was selected as the 285th pick in the 11th round of the 1985 NFL Draft by the Los Angeles Rams, making him the lowest drafted Heisman Award winner among those who were drafted. Flutie played that year for the New Jersey Generals of the upstart USFL. In 1986 he signed with the NFL's Chicago Bears, and later played for the New England Patriots, becoming their starting quarterback in 1988.\nFlutie signed with the BC Lions of the CFL in 1990, and in 1991, threw for a record 6,619 yards. He played briefly with his brother Darren, a wide receiver, before being traded to the Calgary Stampeders, whom he led to victory in the 1992 Grey Cup. In 1994, he threw a record 48 touchdown passes. Flutie played for the Stampeders until 1996, when he signed with the Toronto Argonauts, leading them to back-to-back Grey Cup victories in 1996 and 1997. Flutie was named the CFL's Most Outstanding Player a record six times, and was named the MVP in all three of his Grey Cup victories.\nHe returned to the NFL in 1998 with the Buffalo Bills, where he earned Pro Bowl and NFL Comeback Player of the Year honors. He played for the San Diego Chargers from 2001 to 2004, and finished his career as a member of the New England Patriots in 2005. In 2006, he was ranked #1 in a list of the top 50 CFL players. He was named to the College Football Hall of Fame and Canada's Sports Hall of Fame in 2007.\nAfter retiring in 2006, Flutie served as a college football analyst for ESPN and ABC. In 2009, he joined Versus as a broadcaster for United Football League games. Since 2011, he has worked for NBC Sports and NBCSN.",
+                "wiki_page_link": "https://en.wikipedia.org/wiki/Doug Flutie",
+                "short_description": "Douglas Richard Flutie  is a former player of American and Canadian football who was a quarterback in the National Football League , Canadian Football League , and United States Football League ."
+              },
+              "location": {
+                "longitude": -71.39,
+                "latitude": 42.302,
+                "google_maps_link": "http://maps.google.com?q=42.302,-71.39"
+              }
+            }
+          ]
+        }
 
-      {"current_city": {
-          "name": "Boston",
-          "location": {
-            "latitude": 42.35843,
-            "longitude": -71.05977
-          },
-          "geoname_id": 4930956,
-          "total_points_of_interest": 3674,
-          "important_note": "This city is not yet supported with Yapq Api. Please check our supported city list here: http://yapq.io/cities.html or in json format: http://yapq.io/cities.txt"
-        },
-        "points_of_interest": [
-          {
-            "title": "Boston Tea Party",
-            "categories": [
-              "1773 in Massachusetts",
-              "1773 in the Thirteen Colonies",
-              "1773 riots",
-              "Battles and conflicts without fatalities",
-              "Boston Harbor",
-              "British East India Company",
-              "History of Boston, Massachusetts",
-              "History of tea",
-              "History of the Thirteen Colonies",
-              "Massachusetts in the American Revolution",
-              "Political repression in the United States",
-              "Rebellions in the United States",
-              "Tax resistance in the United States"
-            ],
-            "grades": {
-              "city_grade": 0,
-              "yapq_grade": 5
-            },
-            "geoname_id": 4931015,
-            "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boston_Tea_Party_w.jpg/400px-Boston_Tea_Party_w.jpg",
-            "details": {
-              "description": "The Boston Tea Party  was a political protest by the Sons of Liberty in Boston, on December 16, 1773. The demonstrators, some disguised as American Indians, destroyed an entire shipment of tea sent by the East India Company, in defiance of the Tea Act of May 10, 1773. They boarded the ships and threw the chests of tea into Boston Harbor, ruining the tea. The British government responded harshly and the episode escalated into the American Revolution. The Tea Party became an iconic event of American history, and other political protests such as the Tea Party movement after 2010 explicitly refer to it.\nThe Tea Party was the culmination of a resistance movement throughout British America against the Tea Act, which had been passed by the British Parliament in 1773. Colonists objected to the Tea Act because they believed that it violated their rights as Englishmen to \"No taxation without representation,\" that is, be taxed only by their own elected representatives and not by a British parliament in which they were not represented. Protesters had successfully prevented the unloading of taxed tea in three other colonies, but in Boston, embattled Royal Governor Thomas Hutchinson refused to allow the tea to be returned to Britain.\nThe Boston Tea Party was a key event in the growth of the American Revolution. Parliament responded in 1774 with the Coercive Acts, or Intolerable Acts, which, among other provisions, ended local self-government in Massachusetts and closed Boston's commerce. Colonists up and down the Thirteen Colonies in turn responded to the Coercive Acts with additional acts of protest, and by convening the First Continental Congress, which petitioned the British monarch for repeal of the acts and coordinated colonial resistance to them. The crisis escalated, and the American Revolutionary War began near Boston in 1775.\n^ Young, Shoemaker, 183–85.\n^ John Adams: Revolutionary Writings 1755–1775 . This Destruction of the Tea is so bold, so daring, so firm, intrepid and inflexible, and it must have so important Consequences, and so lasting, that I cant but consider it as an Epocha in History.",
-              "wiki_page_link": "https://en.wikipedia.org/wiki/Boston Tea Party",
-              "short_description": "The Boston Tea Party  was a political protest by the Sons of Liberty in Boston, on December 16, 1773."
-            },
-            "location": {
-              "longitude": -71.0524,
-              "latitude": 42.3536,
-              "google_maps_link": "http://maps.google.com?q=42.3536,-71.0524"
-            }
-          },
-          {
-            "title": "Lizzie Borden",
-            "categories": [],
-            "grades": {
-              "city_grade": 1,
-              "yapq_grade": 4
-            },
-            "geoname_id": 0,
-            "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lizzie_borden.jpg/260px-Lizzie_borden.jpg",
-            "details": {
-              "description": "Lizzie Andrew Borden  was an American woman who was tried and acquitted for the 1892 axe murders of her father and her stepmother in Fall River, Massachusetts. The case was a cause célèbre throughout the United States. Following her release from the prison in which she had been held during the trial, Borden chose to remain a resident of Fall River, Massachusetts, for the rest of her life, despite facing significant ostracism. The Commonwealth of Massachusetts elected to charge no one else with the murder of Andrew and Abby Borden; speculation about the crimes still continues more than 100 years later.",
-              "wiki_page_link": "https://en.wikipedia.org/wiki/Lizzie Borden",
-              "short_description": "Lizzie Andrew Borden  was an American woman who was tried and acquitted for the 1892 axe murders of her father and her stepmother in Fall River, Massachusetts."
-            },
-            "location": {
-              "longitude": -71.1562,
-              "latitude": 41.699,
-              "google_maps_link": "http://maps.google.com?q=41.699,-71.1562"
-            }
-          },
-          {
-            "title": "Doug Flutie",
-            "categories": [],
-            "grades": {
-              "city_grade": 2,
-              "yapq_grade": 2
-            },
-            "geoname_id": 0,
-            "main_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Dougflutie.JPG/400px-Dougflutie.JPG",
-            "details": {
-              "description": "Douglas Richard Flutie  is a former player of American and Canadian football who was a quarterback in the National Football League , Canadian Football League , and United States Football League . He first rose to prominence during his college football career at Boston College, where he received the Heisman Trophy and the Davey O'Brien National Quarterback Award in 1984. His \"Hail Mary\" touchdown pass in a game against Miami on November 23, 1984  is considered among the greatest moments in college football and American sports history. Flutie was selected as the 285th pick in the 11th round of the 1985 NFL Draft by the Los Angeles Rams, making him the lowest drafted Heisman Award winner among those who were drafted. Flutie played that year for the New Jersey Generals of the upstart USFL. In 1986 he signed with the NFL's Chicago Bears, and later played for the New England Patriots, becoming their starting quarterback in 1988.\nFlutie signed with the BC Lions of the CFL in 1990, and in 1991, threw for a record 6,619 yards. He played briefly with his brother Darren, a wide receiver, before being traded to the Calgary Stampeders, whom he led to victory in the 1992 Grey Cup. In 1994, he threw a record 48 touchdown passes. Flutie played for the Stampeders until 1996, when he signed with the Toronto Argonauts, leading them to back-to-back Grey Cup victories in 1996 and 1997. Flutie was named the CFL's Most Outstanding Player a record six times, and was named the MVP in all three of his Grey Cup victories.\nHe returned to the NFL in 1998 with the Buffalo Bills, where he earned Pro Bowl and NFL Comeback Player of the Year honors. He played for the San Diego Chargers from 2001 to 2004, and finished his career as a member of the New England Patriots in 2005. In 2006, he was ranked #1 in a list of the top 50 CFL players. He was named to the College Football Hall of Fame and Canada's Sports Hall of Fame in 2007.\nAfter retiring in 2006, Flutie served as a college football analyst for ESPN and ABC. In 2009, he joined Versus as a broadcaster for United Football League games. Since 2011, he has worked for NBC Sports and NBCSN.",
-              "wiki_page_link": "https://en.wikipedia.org/wiki/Doug Flutie",
-              "short_description": "Douglas Richard Flutie  is a former player of American and Canadian football who was a quarterback in the National Football League , Canadian Football League , and United States Football League ."
-            },
-            "location": {
-              "longitude": -71.39,
-              "latitude": 42.302,
-              "google_maps_link": "http://maps.google.com?q=42.302,-71.39"
-            }
-          }
-        ]
-      }
-
-    ]
+      ]
     }
+
+}
+
+const cities = Cities.data.items;
+
+const allcities = []
+function dothis() {
+  for (let x=0; x < cities.length; x++) {
+    let wanted =  `${cities[x].current_city.name}`;
+    allcities.push(wanted)
+    console.log(wanted);
+
+  }
+    allcities.push("... the import worked, and why couldn't it display current_city?")
+}
+
+dothis();
+console.log(allcities)
+
+export default {
+    cities
 
 }
