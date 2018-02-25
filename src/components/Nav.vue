@@ -3,6 +3,7 @@
       <ul>
         <li><a href="/">Search</a></li>
         <li><a href="SavedList">Saved List</a></li>
+        <li class="fixed"><a href="/login">Login</a></li>
 
       </ul>
 
@@ -24,6 +25,11 @@
 </script>
 
 <style scoped>
+  nav {
+    margin: 1em 0;
+    margin: 1rem 0;
+    
+  }
   ul > li {
     display: inline-block;
 
