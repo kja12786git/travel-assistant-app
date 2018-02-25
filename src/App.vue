@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <main id="app">
     <Nav />
     <router-view /> <!--    <Search /> -->
     <!--    <Results />
     <SavedList /> -->
     <Footer />
 
-  </div>
+  </main>
 
 </template>
 
@@ -51,10 +51,19 @@
     margin: 0;
     padding: 0;
     border: none;
+    cursor: default;
 
   }
   body ul {
     list-style: none;
+
+  }
+  button, a:link, select {
+    cursor: pointer;
+
+  }
+  input {
+    cursor: text;
 
   }
 
