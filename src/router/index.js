@@ -15,11 +15,15 @@ export default new Router({
     {
       path: '/',
       name: 'Search',
-      component: Search
+      component: Search/*,
+      children: [
+        { path: '/results*', component: Results }
+
+      ]*/
 
     },
     {
-      path: '/results',
+      path: '/results*',
       name: 'Results',
       component: Results
 
