@@ -1,9 +1,15 @@
 <template>
-  <header>
+  <header class="Search">
       <h1><span>T</span>hings <span>t</span>o <span>D</span>o <br /><span>I</span>n...</h1>
       <h4>{{msg}}</h4>
-      <form action="/results">
-        <input placeholder="Enter A City"></input>
+      <form action="/results/">
+        <input placeholder="Enter A City" value=""></input>
+<!--        <button type="submit" name="location" value="New York City">>></button> -->
+        <button type="submit">>></button>
+        <br />
+        <br />
+        <h5>- or select -</h5>
+        <br />
         <select>
           <optgroup name="selectacity" label="Available Cities">
             <option v-for="item of items">{{item.current_city.name}}</option>
@@ -11,13 +17,9 @@
           </optgroup>
 
         </select>
-        <button>>></button>
+
 
       </form>
-
-      <ul>
-        <li v-for="item of items">{{item.current_city.name}}</li>
-      </ul>
 
 
   </header>
@@ -518,6 +520,11 @@
 </script>
 
 <style scoped>
+  h1 {
+    margin: 1rem 0;
+    margin: 1em 0;    
+
+  }
   h1 > span {
     background-color: cyan;
     padding: 0 5px;
