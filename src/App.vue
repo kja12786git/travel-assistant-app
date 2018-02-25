@@ -4,7 +4,7 @@
     <router-view /> <!--    <Search /> -->
 <!--    <Results />
     <SavedList /> -->
-
+    <Footer />
   </div>
 
 </template>
@@ -14,11 +14,12 @@
 import Results from '@/components/Results'
 import SavedList from '@/components/SavedList'
 import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
   export default {
     name: 'App',
     components: {
-      Results, SavedList, Nav
+      Results, SavedList, Nav, Footer
 
     },
     data: {

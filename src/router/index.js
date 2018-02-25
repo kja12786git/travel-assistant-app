@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Search from '@/components/Search'
 import Results from '@/components/Results'
 import SavedList from '@/components/SavedList'
+import Footer from '@/components/Footer'
 import NoDocument from '@/components/NoDocument'
 
 Vue.use(Router)
