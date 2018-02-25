@@ -1,5 +1,5 @@
 <template>
-  <div class="404">
+  <div class="savedlist">
     <h2>{{msg}}</h2>
 
   </div>
@@ -11,7 +11,9 @@
     data () {
       return {
         msg: 'Not found page yet. This will be saved list.'
+
       }
+
     }
   }
 </script>

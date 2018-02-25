@@ -6,12 +6,13 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer',
-  data () {
-    return {
-      msg: 'The common footer component.'
+  export default {
+    name: 'Footer',
+    data () {
+      return {
+        msg: 'The common footer component.'
+
+      }
     }
   }
-}
 </script>
