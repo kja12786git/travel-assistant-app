@@ -1,25 +1,38 @@
 <template>
-  <div id="app">
+  <main id="app">
     <Nav />
     <router-view /> <!--    <Search /> -->
-<!--    <Results />
+    <!--    <Results />
     <SavedList /> -->
+    <Footer />
 
-  </div>
+  </main>
 
 </template>
 
 <script>
-import Results from '@/components/Results'
-import SavedList from '@/components/SavedList'
-import Nav from '@/components/Nav'
+  import Results from '@/components/Results'
+  import SavedList from '@/components/SavedList'
+  import Nav from '@/components/Nav'
+  import Footer from '@/components/Footer'
+//  import cities from '@/assets/dbstatic.js'
 
   export default {
     name: 'App',
     components: {
-      Results, SavedList, Nav
+      Nav, Results, SavedList, Footer
+
+  },
+    data () {
+      return {
+        msg: 'The data replicating a static of the api...',
+/*      items: cities,
+        allcities: { // Do for Post with reconfigured JSON format
+        }*/
+      }
 
     }
+
   }
 
 </script>
@@ -34,8 +47,27 @@ import Nav from '@/components/Nav'
     margin-top: 60px;
 
   }
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: default;
+
+  }
   body ul {
-    list-style: none;
+    list-style-type: none;
+
+  }
+  body ol {
+    list-style-type: decimal;
+
+  }
+  button, a:link, select {
+    cursor: pointer;
+
+  }
+  input {
+    cursor: text;
 
   }
 

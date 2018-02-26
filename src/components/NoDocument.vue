@@ -11,7 +11,9 @@ export default {
   data () {
     return {
       msg: 'Not found page.'
+
     }
+
   }
 }
 </script>

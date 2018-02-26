@@ -2,11 +2,10 @@
   <section class="results">
     <h1>Search Results</h1>
       <p>{{msg}}</p>
-      <br />
-      <h2>{{ london.current_city.name }}</h2>
-      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3>
+      <h2>{{ newyorkcity.current_city.name }}</h2>
+      <h3>Number of interests listed: <strong>{{ newyorkcity.current_city.total_points_of_interest }}</strong></h3>
 
-      <ul v-for="(value, key) in london.points_of_interest">
+      <ul v-for="(value, key) in newyorkcity.points_of_interest">
         <li>
           <ul>
             <li><b>{{ value.title }}</b></li>
@@ -27,12 +26,12 @@
 
   export default {
 
-    name: 'Results',
+    name: 'Resultsnyc',
     data () {
       return {
           msg: 'To display data from the city searched.',
 
-          city: () => { return the-city }, //pending
+          city: () => { return newyorkcity },
 
           boston: '',
 
