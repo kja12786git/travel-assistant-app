@@ -3,7 +3,8 @@
       <h4>{{msg}}!</h4>
       <h1><span>T</span>hings <span>t</span>o <span>D</span>o <br /><span>I</span>n...</h1>
       <form action="/results/NYC">
-        <input placeholder="Enter A City" value=""></input>
+        <input placeholder="Enter A City"></input>
+
         <button type="submit">>></button>
         <br />
         <br />
@@ -54,6 +55,23 @@ import list from '@/assets/dbstatic.js'
   h1 > span {
     background-color: cyan;
     padding: 0 5px;
+
+  }
+  input {
+    background: #CCCEEE;
+    padding: .24em;
+    padding: .24rem;
+    box-shadow: 1px 3px 5px inset black;
+    border: 1px solid black;
+
+  }
+
+  button {
+    padding: .24em;
+    padding: .24rem;
+    color: cream;
+    background: orange;
+    border: 1px solid black;
 
   }
 
