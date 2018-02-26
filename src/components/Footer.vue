@@ -15,4 +15,20 @@
       }
     }
   }
+
 </script>
+
+<style scoped>
+  footer {
+    bottom: 0;
+    padding: 1em 0;
+    padding: 1rem 0;
+    margin: 0;
+    text-indent: 1rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+  }
+
+</style>
