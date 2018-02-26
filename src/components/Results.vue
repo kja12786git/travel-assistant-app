@@ -12,7 +12,7 @@
           <ul>
             <li><b>{{ value.title }}</b></li>
             <li>{{ value.details.short_description }}</li>
-            <li>{{ value.location.google_maps_link }}</li>
+            <li><a :href="value.location.google_maps_link" class="google_maps_link" target="newpage">{{ value.location.google_maps_link }}</a></li>
 
           </ul>
 
@@ -25,24 +25,35 @@
 </template>
 
 <script>
-  import list from '@/assets/dbstatic.js'
 
-  export default {
+    import list from '@/assets/dbstatic.js'
 
-    name: 'Results',
-    data () {
-      return {
-          msg: 'To display data from the city searched.',
+    export default {
 
-          city: () => { return 'thecity' }, //pending
+      name: 'Results',
+      data () {
+        return {
+            msg: 'To display data from the city searched.',
 
-          cities: list
+            city: 'london', //pending
+
+            cities: list,
+
+            googlelinks: document.getElementsByClassName("google_maps_link").innerText,
+
+            methods:  {
+              dothis: () => {
+                console.log("space for a bunch of methods")
+                        }
+              }
+
+            }
+
 
         }
 
-      }
+    }
 
-  }
 
 </script>
 
