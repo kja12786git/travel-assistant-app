@@ -26,9 +26,16 @@
 
 <style scoped>
   nav {
+    position: fixed;
+    top: 0;
     margin: 1em 0;
     margin: 1rem 0;
-    
+
+  }
+  ul {
+    padding-left: 1rem;
+    padding-left: 1rem;
+
   }
   ul > li {
     display: inline-block;
