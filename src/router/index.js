@@ -7,6 +7,8 @@ import SavedList from '@/components/SavedList'
 import Footer from '@/components/Footer'
 import NoDocument from '@/components/NoDocument'
 
+import NewYork from '@/components/cities/NewYork'
+
 Vue.use(Router)
 
 export default new Router({
@@ -23,9 +25,15 @@ export default new Router({
 
     },
     {
-      path: '/results*',
+      path: '/results',
       name: 'Results',
       component: Results
+
+    },
+    {
+      path: '/results/NYC',
+      name: 'NewYork',
+      component: NewYork
 
     },
     {
