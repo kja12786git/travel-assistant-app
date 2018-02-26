@@ -2,9 +2,8 @@
   <header class="Search">
       <h1><span>T</span>hings <span>t</span>o <span>D</span>o <br /><span>I</span>n...</h1>
       <h4>{{msg}}</h4>
-      <form action="/results/">
+      <form action="/results/NYC">
         <input placeholder="Enter A City" value=""></input>
-<!--        <button type="submit" name="location" value="New York City">>></button> -->
         <button type="submit">>></button>
         <br />
         <br />
@@ -520,9 +519,14 @@
 </script>
 
 <style scoped>
+  header {
+    margin-bottom: 2em;    
+    margin-bottom: 2rem;
+
+  }
   h1 {
     margin: 1rem 0;
-    margin: 1em 0;    
+    margin: 1em 0;
 
   }
   h1 > span {
