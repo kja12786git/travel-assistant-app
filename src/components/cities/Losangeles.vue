@@ -3,7 +3,7 @@
     <h1>Search Results</h1>
       <p>{{msg}}</p>
       <br />
-    <h2>{{ cities.list.cities.newyorkcity.current_city.name }}</h2>
+    <h2>{{ cities.list.cities.losangeles.current_city.name }}</h2>
 <!--      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3> -->
 
 
@@ -30,7 +30,7 @@
 
     export default {
 
-      name: 'NewYork',
+      name: 'LosAngeles',
       data () {
         return {
             msg: 'To display data from the city searched.',

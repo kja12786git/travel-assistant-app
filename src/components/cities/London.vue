@@ -3,12 +3,12 @@
     <h1>Search Results</h1>
       <p>{{msg}}</p>
       <br />
-    <h2>{{ cities.list.cities.newyorkcity.current_city.name }}</h2>
+    <h2>{{ cities.list.cities.london.current_city.name }}</h2>
 <!--      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3> -->
 
 
       <ol>
-        <li v-for="(value, key) in cities.list.cities.newyorkcity.points_of_interest">
+        <li v-for="(value, key) in cities.list.cities.london.points_of_interest">
           <ul>
             <li><b>{{ value.title }}</b></li>
             <li>{{ value.details.short_description }}</li>
@@ -30,7 +30,7 @@
 
     export default {
 
-      name: 'NewYork',
+      name: 'London',
       data () {
         return {
             msg: 'To display data from the city searched.',
