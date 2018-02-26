@@ -644,6 +644,7 @@ const Cities = {
     }
 
   }
+  
 }
 
 const list = Cities
