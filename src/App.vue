@@ -47,7 +47,7 @@
     margin-top: 60px;
 
   }
-  body * {
+  * {
     margin: 0;
     padding: 0;
     border: none;
@@ -55,7 +55,11 @@
 
   }
   body ul {
-    list-style: none;
+    list-style-type: none;
+
+  }
+  body ol {
+    list-style-type: decimal;
 
   }
   button, a:link, select {
