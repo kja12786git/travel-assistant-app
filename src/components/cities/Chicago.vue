@@ -6,6 +6,7 @@
     <h2>{{ cities.list.cities.newyorkcity.current_city.name }}</h2>
 <!--      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3> -->
 
+
       <ol>
         <li v-for="(value, key) in cities.list.cities.newyorkcity.points_of_interest">
           <ul>

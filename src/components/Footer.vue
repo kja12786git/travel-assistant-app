@@ -1,6 +1,7 @@
 <template>
   <footer>
     <h4>{{msg}}</h4>
+    <em>K. Jerry Alleyne</em>
 
   </footer>
 </template>
@@ -10,7 +11,7 @@
     name: 'Footer',
     data () {
       return {
-        msg: 'The common footer component.'
+        msg: 'Excellently put together via an \'Vue-cli\' build by...'
 
       }
     }
@@ -20,13 +21,14 @@
 
 <style scoped>
   footer {
+    font-size: 80%;
     bottom: 0;
     padding: 1em 0;
     padding: 1rem 0;
     margin: 2em 0 0 0;    
     margin: 2rem 0 0 0;
     text-indent: 1rem;
-    background-color: black;
+    background-color: #020202;
     color: white;
     width: 100%;
 
