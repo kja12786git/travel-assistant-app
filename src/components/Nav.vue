@@ -3,7 +3,7 @@
       <ul>
         <li><a href="/">Search</a></li>
         <li><a href="SavedList">Saved List</a></li>
-        <li class="fixed"><a href="/login">Login</a></li>
+        <li class="end"><a href="/login">Login</a></li>
 
       </ul>
 
@@ -27,23 +27,28 @@
 <style scoped>
   nav {
     position: fixed;
+    width: 100%;
+    height: 50px;
     top: 0;
     background-color: #EEEFFF;
-    padding: 1em;
-    padding: 1rem;
-    border-bottom-right-radius: 20px;
+/*    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
 
   }
   ul {
-    padding-left: 1rem;
-    padding-left: 1rem;
+    padding: 1em 0;
+    padding: 1rem 0;
 
   }
   ul > li {
     display: inline-block;
     width: 100px;
-    border-right: 1px white inset;
+    border-right: 1px skyblue inset;
     position: relative;
+
+  }
+  ul > li:hover {
+    border-bottom: 2px black solid;
 
   }
 
@@ -52,5 +57,10 @@
     text-decoration: none;
 
   }
+  .end {
+    border-right: 0;
+
+  }
+
 
 </style>
