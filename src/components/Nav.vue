@@ -41,10 +41,11 @@
 
   }
   ul > li {
+    position: relative;
     display: inline-block;
     width: 100px;
     border-right: 1px skyblue inset;
-    position: relative;
+
 
   }
   ul > li:hover {
