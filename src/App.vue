@@ -13,12 +13,12 @@
 
 </template>
 
+
 <script>
   import Results from '@/components/Results'
   import SavedList from '@/components/SavedList'
   import Nav from '@/components/Nav'
   import Footer from '@/components/Footer'
-  //import stored from '@/assets/stored'
 
   export default {
     name: 'App',
@@ -32,8 +32,7 @@
 
       }
 
-    },
-//    store: stored,
+    }
 
   }
 
