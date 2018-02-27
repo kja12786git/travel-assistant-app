@@ -35,7 +35,8 @@ export default new Router({
 
     },
     {
-      path: '/results/NYC',
+      path: '/results/newyorkcity',
+      alias: '/results/New%20York%20City',
       name: 'NewYork',
       component: NewYork
 
@@ -44,6 +45,25 @@ export default new Router({
       path: '/results/london',
       name: 'London',
       component: London
+
+    },
+    {
+      path: '/results/losangeles',
+      alias: '/results/Los%20Angeles',      
+      name: 'Los Angeles',
+      component: LosAngeles
+
+    },
+    {
+      path: '/results/boston',
+      name: 'Boston',
+      component: Boston
+
+    },
+    {
+      path: '/results/chicago',
+      name: 'Chicago',
+      component: Chicago
 
     },
     {
