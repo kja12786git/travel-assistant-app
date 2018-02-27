@@ -5,6 +5,7 @@
       <form v-bind:action="/results/ + selected">
         <select v-model="selected">
           <optgroup name="selectacity" label="Available Cities">
+            <option v-if="selected === ''" selected label="Selected A City..."></option>
             <option v-for="(value, key) in cities.list.cities">{{ value.current_city.name }}</option>
 
           </optgroup>
@@ -25,6 +26,9 @@
       <h5 v-if="selected !== 'New York City'">Well, it's not New York City... </h5>
       <h5 v-else>The big apple!</h5>
       <h5 v-if="selected === 'Los Angeles'">Beach body weather!</h5>
+      <h5 v-if="selected === 'London'">The United Kingdom, Great Britain, British! All the same?</h5>
+      <h5 v-if="selected === 'Chicago'">A windy city?!</h5>
+      <h5 v-if="selected === 'Boston'">Something's always brewing in Boston?</h5>
 
   </header>
 
@@ -64,6 +68,12 @@
   header {
     margin-bottom: 2em;
     margin-bottom: 2rem;
+
+  }
+  select {
+    border: black solid 1px;
+    padding: .24em;
+    padding: .24rem;
 
   }
   h1 {
