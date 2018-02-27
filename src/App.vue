@@ -18,20 +18,22 @@
   import SavedList from '@/components/SavedList'
   import Nav from '@/components/Nav'
   import Footer from '@/components/Footer'
+  //import stored from '@/assets/stored'
 
   export default {
     name: 'App',
     components: {
       Nav, Results, SavedList, Footer
 
-  },
+    },
     data () {
       return {
         msg: 'The data replicating a static of the api...',
 
       }
 
-    }
+    },
+//    store: stored,
 
   }
 
