@@ -1,9 +1,9 @@
 <template>
     <nav>
       <ul>
-        <li><a href="/">Search</a></li>
+        <li class="first"><a href="/">Search</a></li>
         <li><a href="SavedList">Saved List</a></li>
-        <li class="end"><a href="/login">Login</a></li>
+        <li><a href="/login">Login</a></li>
 
       </ul>
 
@@ -33,19 +33,21 @@
     background-color: #EEEFFF;
 /*    border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px; */
+    z-index: 20;
 
   }
+
   ul {
     padding: 1em 0;
     padding: 1rem 0;
 
   }
+
   ul > li {
     position: relative;
     display: inline-block;
     width: 100px;
     border-right: 1px skyblue inset;
-
 
   }
   ul > li:hover {
@@ -58,10 +60,10 @@
     text-decoration: none;
 
   }
-  .end {
-    border-right: 0;
+
+  .first {
+    border-left: 1px skyblue solid;
 
   }
-
 
 </style>
