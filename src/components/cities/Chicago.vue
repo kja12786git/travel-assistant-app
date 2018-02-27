@@ -3,12 +3,11 @@
     <h1>Search Results</h1>
       <p>{{msg}}</p>
       <br />
-    <h2>{{ cities.list.cities.newyorkcity.current_city.name }}</h2>
+    <h2>{{ cities.list.cities.chicago.current_city.name }}</h2>
 <!--      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3> -->
 
-
       <ol>
-        <li v-for="(value, key) in cities.list.cities.newyorkcity.points_of_interest">
+        <li v-for="(value, key) in cities.list.cities.chicago.points_of_interest">
           <ul>
             <li><b>{{ value.title }}</b></li>
             <li>{{ value.details.short_description }}</li>
@@ -30,7 +29,7 @@
 
     export default {
 
-      name: 'NewYork',
+      name: 'Chicago',
       data () {
         return {
             msg: 'To display data from the city searched.',
@@ -44,8 +43,8 @@
             methods:  {
               dothis: () => {
                 console.log("space for a bunch of methods")
-                        }
               }
+            }
 
             }
 
@@ -79,7 +78,6 @@
   }
   ol > li:nth-child(even){
     background: lightgrey;
-
 
   }
 
