@@ -9,6 +9,12 @@
 
       <ol>
         <li v-for="(value, key) in cities.list.cities.london.points_of_interest">
+          <div style="font-size:1.33em; color:Tomato">
+            <span v-if="msg === 'To display data from the city searched.'">
+            <i class="far fa-heart">Save this!</i></span>
+            <span v-else><i class="fas fa-heart">Saved!</i></span>
+
+          </div>
           <ul>
             <li><b>{{ value.title }}</b></li>
             <li>{{ value.details.short_description }}</li>
@@ -60,6 +66,7 @@
 <style scoped>
   h2 {
     font-size: 400%;
+
   }
 
   li {
@@ -80,7 +87,6 @@
   }
   ol > li:nth-child(even){
     background: lightgrey;
-
 
   }
 
