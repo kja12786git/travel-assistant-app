@@ -2,8 +2,8 @@
     <nav>
       <ul>
         <li class="first"><a href="/">Search</a></li>
-        <li><a href="SavedList">Saved List</a></li>
-        <li><a href="/login">Login</a></li>
+        <li><a href="/SavedList">Saved List</a></li>
+        <li><a title="Login is not yet required...." href="/">Login</a></li>
 
       </ul>
 
