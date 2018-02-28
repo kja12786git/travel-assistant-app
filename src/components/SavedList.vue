@@ -21,6 +21,7 @@
     },
     data () {
       return {
+
         msg: 'You saved the following items of interest...',
         cities: list
 

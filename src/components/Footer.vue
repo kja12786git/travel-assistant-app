@@ -25,7 +25,8 @@
     bottom: 0;
     padding: 1em 0;
     padding: 1rem 0;
-    margin: 0;
+    margin: 2em 0 0 0;    
+    margin: 2rem 0 0 0;
     text-indent: 1rem;
     background-color: #020202;
     color: white;
