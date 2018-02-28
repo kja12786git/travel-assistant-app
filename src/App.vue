@@ -75,5 +75,10 @@
     margin: 0 auto;
 
   }
+  .details > div {
+    vertical-align: top;
+
+  }
+
 
 </style>
