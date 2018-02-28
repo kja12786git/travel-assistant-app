@@ -3,7 +3,8 @@
     <div class="listlink">A graphical ui link
     </div>
     <h1>Search Results</h1>
-      <p>{{msg}}</p>
+      <p>{{ msg }}</p>
+      <p>{{ listCount }}</p>
       {{methods.dothis()}}
       <br />
           <h2>{{ cities.list.cities.london.current_city.name }}</h2>
@@ -38,12 +39,16 @@
 </template>
 
 <script>
-
+//    import { mapState, mapGetters } from 'vuex'
     import list from '@/assets/dbstatic.js'
 
     export default {
-
       name: 'Results',
+/*      computed: {
+        ...mapState(['pushto']),
+        ...mapGetters(['listCount'])
+
+      },*/
       data () {
         return {
             msg: 'To display data from the city searched.',
