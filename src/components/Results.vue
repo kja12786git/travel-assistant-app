@@ -1,11 +1,10 @@
 <template>
   <section class="results">
-    <div class="listlink">A graphical ui link
-    </div>
+    <div class="listlink">A graphical ui link</div>
     <h1>Search Results</h1>
       <p>{{ msg }}</p>
       <p>{{ listCount }}</p>
-      {{methods.dothis()}}
+      {{ methods.dothis() }}
       <br />
           <h2>{{ cities.list.cities.london.current_city.name }}</h2>
 <!--      <h3>Number of interests listed: <strong>{{ london.current_city.total_points_of_interest }}</strong></h3> -->
@@ -60,8 +59,8 @@
             methods:  {
               dothis: () => {
                 console.log("space for a bunch of methods")
-                        }
               }
+            }
 
             }
 
@@ -107,6 +106,7 @@
   }
   .details > div {
     display: inline-block;
+    vertical-align: top;
 
   }
   .details > div:nth-child(1) {

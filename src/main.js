@@ -18,9 +18,7 @@ new Vue({
 
 // for Auth0 use
 /*app.get('/api/authorize', authCheck, (req,res) => {
-  let loginAuthorized = [
-
-  ];
+  let loginAuthorized = [];
 
   res.json(loginAuthorized);
 })
