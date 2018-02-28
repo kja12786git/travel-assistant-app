@@ -9,6 +9,7 @@
       <Footer />
 
     </main>
+
   </div>
 
 </template>
@@ -18,7 +19,6 @@
   import SavedList from '@/components/SavedList'
   import Nav from '@/components/Nav'
   import Footer from '@/components/Footer'
-  import list from '@/assets/dbstatic.js'
 
   export default {
     name: 'App',
@@ -29,7 +29,6 @@
     data () {
       return {
         msg: 'The data replicating a static of the api...',
-        noconflict: list
 
       }
 
