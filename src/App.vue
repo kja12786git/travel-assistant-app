@@ -79,6 +79,10 @@
     vertical-align: top;
 
   }
+  .listlink {
+    display: none;
+
+  }
 
 
 </style>
