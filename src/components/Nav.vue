@@ -1,9 +1,9 @@
 <template>
     <nav>
       <ul>
-        <li><a href="/">Search</a></li>
+        <li class="first"><a href="/">Search</a></li>
         <li><a href="SavedList">Saved List</a></li>
-        <li class="fixed"><a href="/login">Login</a></li>
+        <li><a href="/login">Login</a></li>
 
       </ul>
 
@@ -27,29 +27,42 @@
 <style scoped>
   nav {
     position: fixed;
+    width: 100%;
+    height: 50px;
     top: 0;
     background-color: #EEEFFF;
-    padding: 1em;
-    padding: 1rem;
-    border-bottom-right-radius: 20px;
+/*    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+    z-index: 20;
 
   }
+
   ul {
-    padding-left: 1rem;
-    padding-left: 1rem;
+    padding: 1em 0;
+    padding: 1rem 0;
 
   }
+
   ul > li {
+    position: relative;
     display: inline-block;
     width: 100px;
-    border-right: 1px white inset;
-    position: relative;
+    border-right: 1px skyblue inset;
+
+  }
+  ul > li:hover {
+    border-bottom: 2px black solid;
 
   }
 
   a:link, a:visited {
     color: black;
     text-decoration: none;
+
+  }
+
+  .first {
+    border-left: 1px skyblue solid;
 
   }
 

@@ -1,11 +1,11 @@
 <template>
   <header class="Search">
-      <h4>{{msg}}!</h4>
+      <h4>{{ msg }}!</h4>
       <h1><span>T</span>hings <span>t</span>o <span>D</span>o <br /><span>I</span>n...</h1>
       <form v-bind:action="/results/ + selected">
         <select v-model="selected">
           <optgroup name="selectacity" label="Available Cities">
-            <option v-if="selected === ''" selected label="Selected A City..."></option>
+            <option v-if="selected === ''" label="Selected A City..." selected></option>
             <option v-for="(value, key) in cities.list.cities">{{ value.current_city.name }}</option>
 
           </optgroup>
@@ -55,7 +55,6 @@
           }, // a direct string for the correct route to go to
 
         },
-        actionroute: '/results/' + 'losangeles', // concat the route into one string
         domselects: '',
         cities: list
 

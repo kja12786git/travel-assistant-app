@@ -25,7 +25,7 @@
     components: {
       Nav, Results, SavedList, Footer
 
-  },
+    },
     data () {
       return {
         msg: 'The data replicating a static of the api...',
@@ -53,7 +53,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    cursor: default;
 
   }
   ul {
@@ -73,7 +72,8 @@
 
   }
   main > * {
-    width: 97%;
+    width: 100%;
+    margin: 0 auto;
 
   }
 
