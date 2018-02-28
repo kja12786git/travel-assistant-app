@@ -1,6 +1,5 @@
 <template>
   <header class="Search">
-      <h4>{{ msg }}!</h4>
       <h1><span>T</span>hings <span>t</span>o <span>D</span>o <br /><span>I</span>n...</h1>
       <form v-bind:action="/results/ + selected">
         <select v-model="selected">
@@ -41,16 +40,10 @@
     name: 'Search',
     data () {
       return {
-        msg: 'Welcome to Travel Assistant App',
+        msg: 'Travel Assistant App',
         selected: '',
-        methods: { // I can't call these methods within this parent..?
-          routedir: (selected) => {
-              let x = selected;
-              let a = '/results/';
-                if (selected === "New York City") {
-                  return a + 'newyorkcity'
-
-                }
+        methods: {
+          placeholder: () => {
 
           }, // a direct string for the correct route to go to
 
