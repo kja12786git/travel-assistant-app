@@ -8,7 +8,7 @@ Vue.use(Vuex)
 
 const savehere = [data]; // this may need a different key for pois exclusively?
 
-console.log(`${savehere} is data feed...` )
+console.log(`${savehere} is data feed...`)
 
 const stored = new Vuex.Store({
 
