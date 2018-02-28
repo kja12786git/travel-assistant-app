@@ -13,7 +13,6 @@
 
 </template>
 
-
 <script>
   import Results from '@/components/Results'
   import SavedList from '@/components/SavedList'
